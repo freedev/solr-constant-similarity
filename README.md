@@ -15,3 +15,6 @@ Add this line in `solrconfig.xml`:
 And add this line into `schema.xml`:
 
     <similarity class="it.damore.solr.similarity.ConstantTFSimilarity"></similarity>
+
+In this library ConstantTFSimilarity and ConstantTFIDFSimilarity extends ClassicSimilarity.
+ClassicSimilarity has been added from Solr 5.4, if you have use older Solr version use DefaultSimilarity instead.
