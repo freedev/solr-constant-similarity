@@ -10,11 +10,11 @@ For example: looking for the term "airpods", products with the title "Airpods St
 
 1. Add this line in `solrconfig.xml`:
 
-    <lib dir="../../../dist/" regex="constant-similarity-\d.*\.jar" />
+`<lib dir="../../../dist/" regex="constant-similarity-\d.*\.jar" />`
 
 2. And add this line into `schema.xml`:
 
-    <similarity class="it.damore.solr.similarity.ConstantTFSimilarity"></similarity>
+`<similarity class="it.damore.solr.similarity.ConstantTFSimilarity"></similarity>`
 
 ## Old Solr versions (before 5.4)
 N.B. In this library ConstantTFSimilarity and ConstantTFIDFSimilarity extend the class ClassicSimilarity.
