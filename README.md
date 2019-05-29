@@ -1,10 +1,8 @@
 # Solr constant-similarity aka Solr e-commerce similarity aka Solr Fixed Similarity
 
-Sometime E-Commerce search needs to override similarity configuration (i.e. TF/IDF config), in order to avoid the relevance problem with term frequency.
+E-Commerce search sometimes needs to override the default similarity configuration (i.e. TF/IDF config), for example when have to avoid the relevance problem with term frequency.
 
-Please see:
-
-https://opensourceconnections.com/blog/2014/12/08/title-search-when-relevancy-is-only-skin-deep/
+For more informations see: https://opensourceconnections.com/blog/2014/12/08/title-search-when-relevancy-is-only-skin-deep/
 
 For example: looking for the term "airpods", products with the title "Airpods Strap For Apple Airpods..." are much more relevant than a product with the title "Airpods wireless Bluetooth earbuds by Apple"
 
