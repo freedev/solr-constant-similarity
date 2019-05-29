@@ -1,4 +1,4 @@
-# constant-similarity aka e-commerce similarity
+# Solr constant-similarity aka Solr e-commerce similarity
 
 E-Commerce search needs to override ClassicSimilarity in order to avoid the relevance problem with term frequency.
 
