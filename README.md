@@ -6,6 +6,8 @@ For more informations see: https://opensourceconnections.com/blog/2014/12/08/tit
 
 For example: looking for the term "airpods", products with the title "Airpods Strap For Apple Airpods..." are much more relevant than a product with the title "Airpods wireless Bluetooth earbuds by Apple"
 
+## Solr Constant Similarity Configuration
+
 Add this line in `solrconfig.xml`:
 
     <lib dir="../../../dist/" regex="constant-similarity-\d.*\.jar" />
