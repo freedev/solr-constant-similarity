@@ -16,5 +16,6 @@ And add this line into `schema.xml`:
 
     <similarity class="it.damore.solr.similarity.ConstantTFSimilarity"></similarity>
 
+## Old Solr versions (before 5.4)
 N.B. In this library ConstantTFSimilarity and ConstantTFIDFSimilarity extend the class ClassicSimilarity.
 But ClassicSimilarity has been added only from Solr 5.4, so if you have an older Solr version, modify the source code and extend the class DefaultSimilarity instead.
