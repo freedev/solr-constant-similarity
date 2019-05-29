@@ -1,6 +1,6 @@
-# Solr constant-similarity aka Solr e-commerce similarity
+# Solr constant-similarity aka Solr e-commerce similarity aka Solr Fixed Similarity
 
-E-Commerce search needs to override ClassicSimilarity in order to avoid the relevance problem with term frequency.
+Sometime E-Commerce search needs to override similarity configuration (i.e. TF/IDF config), in order to avoid the relevance problem with term frequency.
 
 Please see:
 
@@ -16,5 +16,5 @@ And add this line into `schema.xml`:
 
     <similarity class="it.damore.solr.similarity.ConstantTFSimilarity"></similarity>
 
-In this library ConstantTFSimilarity and ConstantTFIDFSimilarity extends ClassicSimilarity.
-ClassicSimilarity has been added from Solr 5.4, if you have use older Solr version use DefaultSimilarity instead.
+N.B. In this library ConstantTFSimilarity and ConstantTFIDFSimilarity extend the class ClassicSimilarity.
+But ClassicSimilarity has been added only from Solr 5.4, so if you have an older Solr version, modify the source code and extend the class DefaultSimilarity instead.
