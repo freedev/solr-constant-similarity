@@ -18,4 +18,4 @@ For example: looking for the term "airpods", products with the title "Airpods St
 
 ## Old Solr versions (before 5.4)
 N.B. In this library ConstantTFSimilarity and ConstantTFIDFSimilarity extend the class ClassicSimilarity.
-But ClassicSimilarity has been added only from Solr 5.4, so if you have an older Solr version, modify the source code and extend the class DefaultSimilarity instead.
+But ClassicSimilarity has been added only from Solr 5.4, so if you have an older Solr version, just modify the source code and extend the class DefaultSimilarity instead.
